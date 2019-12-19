@@ -1,0 +1,1268 @@
+@font-face{
+    font-family: "Futura New";
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/FuturaNewBook.otf') format('opentype');  
+}
+@font-face{
+    font-family: "Futura New";
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/FuturaNewBold.otf') format('opentype');  
+}
+@font-face{
+    font-family: "Futura New";
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/FuturaNewLight.otf') format('opentype');  
+}
+@font-face{
+    font-family: "Futura New";
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/FuturaNewMedium.otf') format('opentype');  
+}
+body, div, h1, h2, h3, h4, h5, h6, p, input, ul, li, a, section, form, table, td, tr, tbody, select, label, figure{
+	margin: 0px;
+	padding: 0px;
+	outline: 0;
+	text-decoration: none;
+}
+textarea{
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: "Futura New";
+}
+.btn-link:focus, .btn-link:hover, a:hover, a:focus{
+	text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container{
+	max-width: 1140px;
+}
+h2{
+    font-size: 50px;
+    padding: 0 0 60px; 
+    text-align: center;
+    font-weight: 400;
+    color: #222;	
+}
+p{
+	font-family: 'Roboto', sans-serif;
+}
+/*#header*/
+#header {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    font-family: "Futura New";
+    padding: 25px 0;
+}
+#header.fixed{
+	position: fixed;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    padding: 5px 0;
+}
+.navbar-bg{
+	background-color: transparent !important;
+	padding: 5px 0;
+}
+.navbar-brand{
+	width: 210px;
+	z-index: 1;
+	padding: 0;
+}
+.navbar-brand img{
+	width: 100%;
+}
+.navbar-nav > li{
+	position: relative;
+}
+.navbar-nav > li a{
+	display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    line-height: 50px;
+    padding: 0px 15px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    font-family: "Futura New";
+}
+.navbar-nav > li ul.submenu a{
+	line-height: 40px;
+}
+.navbar-nav > li ul.submenu{
+	display: none;
+    position: absolute;
+    background: #ffffff;
+    z-index: 99;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 -5px 26px 0 rgba(0,0,0,0.2);
+    min-width: 200px;
+    left: 0px;
+    top: 48px;
+}
+.navbar-nav > li.dropdown{
+	margin-right: 10px;
+}
+.navbar-nav > li.dropdown > a:after{
+    content: "\f078";
+    position: absolute;
+    right: 0;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+}
+.navbar-nav > li ul.submenu:before{
+	content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 2px;
+    left: 23px;
+    top: -6px;
+    transform: rotate(-45deg);
+}
+.navbar-nav > li:hover ul.submenu{
+	display: block;
+}
+.navbar-nav > li:last-child a{
+	margin-left: 15px;
+    line-height: 50px;
+    color: #ffffff;
+    background: #35455d;
+    border: 0px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+    box-shadow: 0 5px 14px 0 rgba(0,0,0,0.35);
+}
+/*banner*/
+.banner-section{
+    position: relative;
+    min-height: 100vh;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 115px 0 50px;
+    display: flex;
+    align-items: center;
+    color: #666666;
+    font-size: 18px;	
+} 
+.banner-section figure img{
+	width: 100%;
+}
+.banner-section .row{
+	align-items: center;
+}
+.banner-section h1{
+	font-size: 55px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #222;
+}
+.pc-signup,
+.bs-signup{
+	max-width: 495px;
+	display: block;
+    width: 100%;
+    position: relative;
+}
+.pc-signup input,
+.bs-signup input{
+	height: 60px;
+    border: 1.5px solid #35455d;
+    background: #ffffff;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    padding: 0 120px 0 45px;
+    border-radius: 60px;
+    font-family: 'Roboto', sans-serif;
+}  
+.pc-signup input[type=submit],
+.bs-signup input[type=submit]{
+	position: absolute;
+	cursor: pointer;
+    border: 0px;
+    background: #35455d;
+    height: 52px;
+    right: 4px;
+    top: 4px;
+    width: 150px;
+    color: #ffffff;
+    border-radius: 60px;
+    line-height: 55px;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 0;
+} 
+.pc-signup label,
+.bs-signup label{
+	display: block;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 400;
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+}
+.pc-signup .fa-envelope,
+.ss-signup .fa-envelope,
+.bs-signup .fa-envelope{
+    position: absolute;
+    left: 17px;
+    top: 20px;
+    font-size: 21px;
+    color: #999;	
+}
+/*work-section*/
+.faq-section,
+.work-section{
+	padding: 60px 0;
+}
+.work-section strong{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;	
+    display: block;
+    font-family: "Futura New";
+}
+.ws-list li{
+    position: relative;
+    line-height: 1.6;
+    padding-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.ws-list  li+li {
+    margin-top: 20px;
+}
+.work-section figure{
+	width: 250px;
+    height: 480px;
+    margin-left: auto;
+    position: relative;
+    background: #35455d;
+    border-radius: 60px;
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.5);
+    margin: 0 auto;
+}
+.work-section figure video,
+.work-section figure img{
+	position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    padding: 50px 15px 50px;
+}
+.work-section .row{
+    position: relative;
+}
+.work-section .video-mob{
+    position: sticky;
+    top: 125px;
+}
+/*faq*/
+.card{
+	border: none;
+}
+.card-header{
+	padding: 0;
+	background: transparent;
+	border-bottom: 1px solid #000;
+}
+.card-header button{
+	width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    color: #666;
+    padding: 20px 30px 20px 45px;
+    position: relative;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+.card-header button:hover{
+	color: #666;
+}
+.card-body{
+	font-family: 'Roboto', sans-serif;
+}
+.faq-section .accordion .fa-chevron-down{
+	position: absolute;
+    right: 0;
+    top: 25px;
+}   
+.faq-section .accordion .fa-question-circle{
+	position: absolute;
+    left: 0;
+    top: 25px;
+}
+.non-faq{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+    margin: 30px auto 0;
+}
+.non-faq a{
+	display: inline-block;
+    line-height: 50px;
+    color: #ffffff;
+    background: #35455d;
+    border: 0px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+    box-shadow: 0 5px 14px 0 rgba(0,0,0,0.35);
+    margin-left: 5px;
+}    
+/*footer*/
+#footer{
+	font-size: 16px;
+}
+#footer .signup-section{
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 35px;
+    margin-bottom: 50px;
+}
+.signup-section strong{
+	font-family: "Futura New";
+	color: #222;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.signup-section .row .ss-signup{
+	position: relative;
+}
+.signup-section input{
+	height: 60px;
+    border: 1.5px solid #35455d;
+    background: #ffffff;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    padding: 0 120px 0 45px;
+    border-radius: 60px;
+    font-family: 'Roboto', sans-serif;
+}   
+.signup-section input[type=submit]{
+	position: absolute;
+	cursor: pointer;
+    border: 0px;
+    background: #35455d;
+    height: 52px;
+    right: 4px;
+    top: 4px;
+    width: 150px;
+    color: #ffffff;
+    border-radius: 60px;
+    line-height: 55px;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+} 
+.footer-logo {
+    display: block;
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+.footer-logo img {
+    display: block;
+    width: 100%;
+}
+#footer .footer-one span{
+	margin: 15px 0 0;
+	display: block;
+	font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    font-family: "Futura New";
+}
+.ficons-list > li{
+	float: left;
+	margin-right: 15px;
+}
+.ficons-list li a {
+    color: #666;
+    font-size: 30px;
+}
+.footer-content strong{
+    font-size: 18px;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 40px;
+    font-family: "Futura New";
+}
+.footer-content .fmenu-list a{
+	font-family: 'Roboto', sans-serif;
+    color: #666;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.footer-copyright{
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-family: 'Roboto', sans-serif;
+}
+/*popup*/
+.modal-content{
+	padding: 20px;
+    border: none;
+    border-radius: 30px;
+}
+.modal-body{
+	padding: 15px;
+}
+.modal-body img{
+	width: auto;
+    height: 50px;
+}
+.modal-dialog{
+	max-width: 550px;
+}
+.modal-item{
+	display: block;
+    padding: 15px;
+    text-align: center;
+    border-radius: 3px;
+}
+.modal-header{
+	border-bottom: 0;
+	padding: 15px 0 30px;
+    margin: 0 auto;
+}
+.modal-header img{
+	max-width: 180px;
+}
+.modal-item strong{
+	color: #000;
+    font-family: "Futura New";
+    font-size: 20px;
+    display: block;
+    padding: 5px 0;
+}
+.modal-item p{
+	font-size: 16px;
+	color: #808080;
+    font-family: 'Roboto', sans-serif;
+}
+.modal-item:hover{
+	/*box-shadow: 0 2px 4px 0 rgba(186,200,211,0.75);*/
+    transform: translateY(-5%);
+}
+.modal {
+    top: 100px;    
+}
+.modal-header .close{
+	padding: 0;
+}
+.modal-body .col-md-6:first-child{
+    box-shadow: 3px 0px 3px -4px #000;
+}
+.modal-content button{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: white;
+    opacity: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.5);
+}
+.modal-content button .fa-times{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 18px;
+}
+/*price page*/
+#feature-content,
+.price-top{
+    padding: 115px 0 25px;
+}
+.pc-signup{
+	margin: 0 auto;
+}
+.price-top h2{
+	padding: 100px 0 40px;
+	font-size: 30px;
+}
+.pc-signup input{
+	padding: 0 240px 0 45px;
+}
+.pc-signup input[type=submit]{
+	width: 240px;
+}
+.price-table{
+    padding: 50px 0 25px;
+}
+.price-info{
+    padding: 25px 0 50px ;
+}
+
+table{
+	width: 100%;
+}
+.price-heading{
+	line-height: 50px;
+	background: #eee;
+}
+.price-heading td{
+    padding-left: 15px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Futura New";
+}
+.price-feature{
+	height: 75px;
+	border-bottom: 1px solid #eee;
+}
+.price-feature .feature{
+	padding-left: 15px;
+    padding-right: 15px;
+}
+.price-feature .business,
+.price-feature .pro,
+.price-feature .free{
+	text-align: center;
+    width: 180px;
+    border-left: 1px solid #eee;
+}
+.price-feature .fa-check{
+	color: #20b2e2;
+	font-size: 20px;
+}
+.price-feature .fa-times{
+	color: #bbbbbb;
+	font-size: 20px;
+}
+.price-table .toggle-button{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-family: "Futura New";
+}
+.toggle-button .right-toggle{
+    color: #ccc;
+}
+.toggle-button.checked .left-toggle{
+    color: #ccc;
+}
+.toggle-button.checked .right-toggle{
+    color: #000;
+}
+.price-table .price-table-content {
+	margin: 0 auto;
+    border: 1px solid #eee;
+    padding: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+.price-main-heading{
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background: #555;
+    font-size: 20px;
+    font-family: "Futura New";
+}
+.price-main-heading .feature{
+	padding-left: 15px;
+	text-align: left;
+}
+.price-main-heading .ap{
+    display: none;
+}
+.price-table-content.checked .price-main-heading .ap {
+    display: block;
+}
+.price-table-content.checked .price-main-heading .mp{
+    display: none;
+}
+.mobile-price{
+    display: none;
+}
+/*price-info*/
+
+.price-info strong{
+	font-family: "Futura New";
+	font-size: 20px;
+}
+.price-info p{
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 15px;
+	font-size: 15px;
+}
+.price-cost{
+	display: block;
+}
+/*contact*/
+#page-content,
+#feedback-content,
+#contact-content{
+	padding: 115px 0 50px;
+}
+.form-contact,
+.git-content{
+	padding: 60px 0 0;
+}
+#feedback-content strong,
+.form-contact strong,
+.git-content strong{
+	margin-bottom: 20px;
+    display: block;
+    font-size: 25px;
+    font-family: "Futura New";
+}
+.git-content p{
+	margin-bottom: 20px;
+    font-size: 14px;
+}
+.git-content span{
+	display: block;
+    font-size: 18px;
+}
+.git-content img{
+    width: 100%;
+}
+#feedback-content input[type=text],
+#feedback-content input[type=email],
+.form-contact input[type=email],
+.form-contact input[type=text]{
+    width: 100%;
+    line-height: 40px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    color: #666;
+}
+#feedback-content select,
+.form-contact select{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    color: #666;   
+}
+#feedback-content textarea,
+.form-contact textarea{
+    width: 100%;
+    padding: 15px;
+    height: 100px;	
+}
+#feedback-content input[type=submit],
+.form-contact input[type=submit]{
+	margin-top: 5px;
+    line-height: 40px;
+    width: 150px;
+    background: #35455d;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Futura New";
+    border: none;
+}
+/*feedback-btn*/
+.feedback-btn a{
+	display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    width: 150px;
+    text-align: center;
+    color: #fff;
+    background: #35455d;
+    transform: rotate(-90deg);
+    right: -52px;
+    position: fixed;
+    bottom: calc(50% - 23px);
+    font-family: "Futura New";
+    font-weight: 700;
+}
+/*feedback*/
+#feedback-content .feedback-form{
+    max-width: 550px;
+    padding-top: 50px;
+}
+/*toggle-slider*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  line-height: 12px;
+  margin: 0 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #808080;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0;
+  bottom: -4px;
+  background-color: #35455d;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*feature*/
+.feature-top{
+    padding: 50px 0;
+}
+.feature-top h2{
+    font-size: 40px;
+}
+.feature-items{
+    padding-bottom: 200px;
+}
+.feature-items .row{
+    align-items: center;
+}
+.feature-items img{
+    width: 100%;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.1);
+}
+.feature-animate .feature-items img{
+    width: unset;
+    box-shadow: unset;
+}
+.feature-items .feature-text{
+    padding: 0 100px;
+}
+.feature-items .col-md-6{
+    padding: 0;
+}
+.feature-text strong{
+    font-family: "Futura New";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 20px;
+    display: block;
+}
+.feature-text ul,
+.feature-text p{
+    color: #aaa;
+}
+.feature-text ul{
+    list-style: disc;
+    padding-left: 20px;
+}
+.feature-text ul li{
+    line-height: 30px;
+}
+.feature-items:nth-child(even) .col-md-6:first-child{
+    order: 2;
+}
+.feature-items:nth-child(even) .col-md-6:last-child{
+    order: 1;
+}
+.feature-items .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*animate*/
+.feature-animate .image3 img,
+.feature-animate .image4 img,
+.feature-animate .image8 img{
+    position: relative;
+    -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example1 {
+  0%   {left:0px; top:0px;}
+  25%  {left:20px; top:-20px;}
+  50%  {left:0px; top:0px;}
+  75%  {left:-20px; top:20px;}
+  100% {left:0px; top:0px;}
+}
+/* Standard syntax */
+@keyframes example1 {
+  0%   {left:0px; top:0px;}
+  25%  {left:20px; top:-20px;}
+  50%  {left:0px; top:0px;}
+  75%  {left:-20px; top:20px;}
+  100% {left:0px; top:0px;}
+}
+.feature-animate .image7 img,
+.feature-animate .image5 img,
+.feature-animate .image1 img{
+    position: relative;
+    -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+  0%   {left:0px; top:0px;}
+  25%  {left:20px; top:20px;}
+  50%  {left:0px; top:0px;}
+  75%  {left:-20px; top:-20px;}
+  100% {left:0px; top:0px;}
+}
+/* Standard syntax */
+@keyframes example2 {
+  0%   {left:0px; top:0px;}
+  25%  {left:20px; top:20px;}
+  50%  {left:0px; top:0px;}
+  75%  {left:-20px; top:-20px;}
+  100% {left:0px; top:0px;}
+}
+.feature-animate .image6 img,
+.feature-animate .image2 img{
+    position: relative;
+    -webkit-animation-name: example3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example3 {
+  0%   {left:0px; top:0px;}
+  25%  {left:0px; top:20px;}
+  50%  {left:0px; top:0px;}
+  75%  {left:0px; top:-20px;}
+  100% {left:0px; top:0px;}
+}
+/* Standard syntax */
+@keyframes example3 {
+  0%   {left:0px; top:0px;}
+  25%  {left:0px; top:20px;}
+  50%  {left:0px; top:0px;}
+  75%  {left:0px; top:-20px;}
+  100% {left:0px; top:0px;}
+}
+.feature-animate img{
+    width: 60px;
+    height: auto;
+}
+.feature-animate{
+    position: relative;
+    padding: 150px 0;
+}
+.feature-animate .col-md-6:last-child{
+    position: static;
+}
+.feature-animate .image1{
+    position: absolute;
+    top: 40px;
+    right: 90px;
+}
+.feature-animate .image2{
+    position: absolute;
+    top: 76px;
+    right: 248px;
+}
+.feature-animate .image3{
+    position: absolute;
+    top: 35px;
+    right: 400px;
+}
+.feature-animate .image4{
+    position: absolute;
+    top: 160px;
+    right: 80px;
+}
+.feature-animate .image5{
+    position: absolute;
+    top: 200px;
+    right: 260px;
+}
+.feature-animate .image6{
+    position: absolute;
+    top: 167px;
+    right: 431px;
+}
+.feature-animate .image7{
+    position: absolute;
+    top: 281px;
+    right: 122px;
+}
+.feature-animate .image8{
+    position: absolute;
+    top: 287px;
+    right: 364px;
+}
+@media only screen and (max-width: 1199px) {
+	.modal {
+	    top: 75px;    
+	}
+}
+@media only screen and (max-width: 991px) {
+	.form-contact, .git-content{
+		padding: 50px 0 0;
+	}
+	.navbar-nav > li a{
+		line-height: 40px;
+	    padding: 0px 10px;
+	}
+	.navbar-nav > li:last-child a{
+		margin-left: 10px;
+	    line-height: 40px;
+	    padding: 0 15px;
+	}
+	.navbar-brand{
+		width: 180px;
+	}
+	.banner-section h1 {
+		font-size: 35px;
+	}
+	.ss-signup .fa-envelope, .bs-signup .fa-envelope{
+		left: 8px;
+	    top: 13px;
+	    font-size: 18px;
+	}
+	.signup-section input,
+	.bs-signup input{
+		height: 45px;
+	    padding: 0 111px 0 30px;
+	}
+	.signup-section input[type=submit]{
+		height: 37px;
+		line-height: 37px;
+		width: 100px;
+	}
+	.bs-signup input[type=submit]{
+		height: 37px;
+	    width: 125px;
+	    line-height: 36px;
+	}
+    .feature-items{
+        padding-bottom: 50px;
+    }
+    .feature-items .feature-text{
+        padding: 0 50px;
+    }
+    .feature-text strong{
+        font-size: 25px;
+        line-height: 30px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    .feature-top h2,
+	h2{
+		font-size: 30px;
+	}
+    .feature-top h2{
+        padding-bottom: 50px;
+    }
+	.work-section strong{
+		font-size: 25px;
+	}
+	.footer-copyright,
+	.footer-content .fmenu-list a,
+	.ws-list li, p{
+		font-size: 14px;
+	}
+	.ficons-list li a,
+	.signup-section strong{
+		font-size: 20px;
+	}
+	.card-header button{
+		padding: 10px 30px;
+		font-size: 18px;
+	}
+	.faq-section .accordion .fa-chevron-down, .faq-section .accordion .fa-question-circle {
+	    top: calc(50% - 9px);
+	}
+	.non-faq{ 
+	    font-size: 16px;
+	    margin: 18px auto 0;
+	}
+	.non-faq a{
+		line-height: 40px;
+		padding: 0 20px;
+	}
+	.modal{
+		top: 40px;
+	} 
+    .feature-animate .image1{
+        right: 90px;
+    }
+    .feature-animate .image2{
+        right: 200px;
+    }
+    .feature-animate .image3{
+        right: 310px;
+    }
+    .feature-animate .image4{
+        right: 65px;
+    }
+    .feature-animate .image5{
+        right: 175px;
+    }
+    .feature-animate .image6{
+        right: 300px;
+    }
+    .feature-animate .image7{
+        right: 90px;
+    }
+    .feature-animate .image8{
+        right: 250px;
+    }
+}
+@media only screen and (max-width: 767px){
+	.form-contact, .git-content{
+		text-align: center;
+		padding: 0;
+	}
+    .modal{
+        top: 15px;
+    } 
+	.navbar-toggler{
+		z-index: 1;
+		color: #000;
+	}	
+	.footer-content,
+	.signup-section,
+	.non-faq,
+	.banner-section{
+		text-align: center;
+	}
+	.bs-signup{
+		margin: 0 auto;
+	}
+	.signup-section input, .bs-signup input{
+		padding-right: 10px;
+	}
+	.signup-section input[type=submit],
+	.bs-signup input[type=submit]{
+		height: 45px;
+	    width: 100%;
+	    position: unset;
+	    line-height: 45px;
+	    margin: 10px 0 0;
+	}
+	.faq-section, .work-section{
+		padding: 25px 0;
+	}
+	h2,
+	.banner-section{
+		padding-bottom: 25px;
+	}
+	.work-section strong {
+	    font-size: 25px;
+	    line-height: 30px;
+	    margin-bottom: 15px;
+	}
+	.ws-list li+li{
+		margin-top: 10px;
+	}
+	.card-header button{
+		white-space: unset;
+	}
+	.signup-section .row{
+		margin: 0;
+	}
+	#footer .signup-section{
+		padding: 15px;
+	}
+	.footer-logo{
+		margin: 0 auto 15px;
+	}
+	.ficons-list{
+		display: inline-block;
+	}
+	.ss-signup{
+		margin: 10px 0;
+	}
+	#collapsibleNavbar{
+		background: rgb(53, 69, 93);
+	    z-index: 1;
+	}
+	.navbar-nav > li a{
+		color: #fff;
+	}
+	.navbar-nav > li:last-child a{
+	    margin-left: 0;
+	    line-height: 40px;
+	    width: 100%;
+	    padding: 0 9px;
+	    border-radius: unset;
+	    box-shadow: unset;
+	    font-weight: 500;
+	    font-family: "Futura New";
+	}
+	.navbar-nav > li:hover ul.submenu{
+		display: none;
+	}
+	.navbar-nav > li ul.submenu{
+		position: unset;
+		background: unset;
+		box-shadow: unset;
+		padding-left: 15px;
+	}
+	.navbar-nav > li ul.submenu:before{
+		display: none;
+	}
+	.modal-item{
+		margin-bottom: 15px;
+	}
+	.modal-header img{
+		width: 180px;
+		margin: 0 auto;
+	}
+	.navbar-nav > li.dropdown > a:after{
+		right: unset; 
+	    padding: 0 5px;
+	}   
+    .price-table-content.business-table .free,
+    .price-table-content.business-table .pro,
+    .price-table-content.pro-table .free,
+    .price-table-content.pro-table .business,
+    .price-table-content.free-table .business,
+    .price-table-content.free-table .pro{
+        display: none;
+    }
+    .price-table-content.business-table .business,
+    .price-table-content.free-table .free,
+    .price-table-content.pro-table .pro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 78px;
+        width: 130px;
+    }
+    .price-main-heading{
+        line-height: 40px;
+    }
+    .price-table-content.pro-table .price-main-heading .pro,
+    .price-table-content.business-table .price-main-heading .business,
+    .price-table-content.free-table .price-main-heading .free{
+        display: table-cell;
+        line-height: 40px;
+    }
+    .mobile-price{
+        display: block;
+        text-align: center;
+    }
+    .mobile-price button{
+        width: 85px;
+        line-height: 40px;
+        background: #35455d;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+    }
+    .price-top h2{
+        padding-top: 0px;
+    }
+    .pc-signup input[type=submit]{
+        position: unset;
+        top: unset;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .pc-signup input{
+        padding-right: 0;
+    }
+    .price-info{
+        padding-bottom: 25px;
+    }
+    .price-table{
+        padding-top: 25px;
+    }
+    .footer-content strong{
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    .feature-top{
+        padding: 0;
+    }
+    .feature-items .feature-text {
+        padding: 0 30px;
+    }
+    .feature-items .col-md-6:first-child{
+        order: 1;
+    }
+    .work-section figure{
+        margin: 20px auto;
+    }
+    .modal-body .col-md-6:first-child{
+        box-shadow: 0 5px 4px -6px #000;
+    }
+    .modal-content button{
+        top: -7px;
+        right: -7px;
+    }
+    .modal-header{
+        padding: 10px 0;
+    }
+    .modal-body .col-md-6:last-child .modal-item{ 
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+    #feedback-content .feedback-form{
+        padding-top: 0px;
+    }
+}
